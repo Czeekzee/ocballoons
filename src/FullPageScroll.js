@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from "@ap.cx/react-fullpage";
-import styled, { createGlobalStyle } from "styled-components";
-import bg from './img/balloonartsection.png'
+import { createGlobalStyle } from "styled-components";
 import bg2 from './img/facepaintsection.png'
 import bg3 from './img/balloonhall.png'
 import bg4 from './img/floating.png'
@@ -226,13 +225,11 @@ const FullPageScroll = () => {
                   height: '25vw',
                   background: 'orange', // Set background color to orange
                   zIndex: 1,
-                  transform: 'rotate(45deg)',
                   position: 'absolute',
                   top: '50%',
                   left: '50%',
                   transform: 'translate(-50%, -50%) rotate(45deg)', // Apply rotation
                   border: '15px solid orange', // Add border for diamond shape
-                  zIndex: 2,
                 }}
               ></div>
               <h1 style={{ fontSize: 'clamp(4vw, 6vw, 8vh)', textDecoration: 'underline', marginBottom: 'clamp(2vh, 4vh, 5vh)', transition: 'transform 0.3s ease-in-out', zIndex: 3, position: 'relative' }}
